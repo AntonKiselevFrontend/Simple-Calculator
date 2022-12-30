@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="./img/calc.jpg" type="image/x-icon">
+    <title>Calculator</title>
+</head>
+<body>
+    <article class="calc">
+        <div class="calc__textarea">
+            <p class="calc__enter" id="enter"></p>
+            <p class="calc__result" id="total"></p>
+        </div>
+        <div class="calc__signs">
+            <button class="calc__btn" id="cancel">AC</button>
+            <button class="calc__btn">( )</button>
+            <button class="calc__btn" value="%" id="percent">%</button>
+            <button class="calc__btn calc__operator calc__operator-plus" value="+" id="plus">+</button>
+
+            <button class="calc__btn calc__digit">1</button>
+            <button class="calc__btn calc__digit">2</button>
+            <button class="calc__btn calc__digit">3</button>
+            <button class="calc__btn calc__operator calc__operator-minus" value="-" id="minus">
+                -
+            </button>
+
+            <button class="calc__btn calc__digit">4</button>
+            <button class="calc__btn calc__digit">5</button>
+            <button class="calc__btn calc__digit">6</button>
+            <button class="calc__btn calc__operator" value="*" id="multiplication">
+                *
+            </button>
+
+            <button class="calc__btn calc__digit">7</button>
+            <button class="calc__btn calc__digit">8</button>
+            <button class="calc__btn calc__digit">9</button>
+            <button class="calc__btn calc__operator" value="/" id="division">
+                /
+            </button>
+
+            <button class="calc__btn calc__item-img" id="back">
+                <img src="./img/Frame 12.png" alt="backspace">
+            </button>
+            <button class="calc__btn calc__digit">0</button>
+            <button class="calc__btn" value=".">.</button>
+            <button class="calc__btn calc__operator calc__operator-equal" value="=" id="result">
+                =
+            </button>
+        </div>
+    </article>
+
+    <script type="text/javascript" src="calc.js"></script>
+</body>
+</html>

@@ -1,0 +1,102 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap");
+@import url(./reset.css);
+.calc__signs .calc__btn, .calc .calc__result, .calc .calc__enter {
+  font-family: "Roboto Condensed";
+  font-style: normal;
+  font-weight: 400;
+}
+
+body {
+  background: linear-gradient(168.55deg, #71C09F 0%, #27434B 100%);
+  margin: 0;
+  font-family: "Roboto Condensed", sans-serif;
+}
+
+/*main signs 
+https://www.figma.com/file/mzDMTF7s0ZOjL5cJWrW8Eo/Calculator-(Community)?node-id=23%3A281&t=o1EgAAJsGovVz2sQ-4
+*/
+.calc__signs .calc__btn {
+  width: 90px;
+  height: 90px;
+  background-color: transparent;
+  border: none;
+  font-size: 32px;
+  line-height: 40px;
+  cursor: pointer;
+}
+
+.calc {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  min-height: 100vh;
+  max-width: 360px;
+  margin: 0 auto;
+}
+.calc .calc__enter {
+  padding-bottom: 8px;
+  padding-right: 24px;
+  font-size: 24px;
+  line-height: 28px;
+  text-align: right;
+  color: #ACFAFF;
+}
+.calc .calc__result {
+  padding-bottom: 48px;
+  padding-right: 24px;
+  font-size: 64px;
+  line-height: 75px;
+  /* identical to box height */
+  text-align: right;
+  color: #ffffff;
+}
+
+.calc__signs {
+  display: flex;
+  flex-flow: row wrap;
+  width: 360px;
+  border-top: 1px solid #70BE9D;
+}
+.calc__signs .calc__btn {
+  color: #fff;
+}
+.calc__signs .calc__item-img {
+  padding-left: 0;
+}
+.calc__signs .calc__operator {
+  border-left: 1px solid #70BE9D;
+  color: #70BE9D;
+  padding: 0;
+}
+.calc__signs .calc__operator-plus {
+  font-size: 2.5em;
+}
+.calc__signs .calc__operator-minus {
+  font-size: 3.5em;
+}
+.calc__signs .calc__operator-equal {
+  color: #fff;
+  background-color: #70BE9D;
+}
+.calc__signs .calc__btn:hover {
+  background-color: #70BE9D;
+}
+.calc__signs .calc__operator:hover {
+  color: #fff;
+}
+.calc__signs .calc__btn:active {
+  box-shadow: inset 0 0 15px rgba(0, 0, 0, 0.63);
+}
+@media (max-width: 359px) {
+  .calc__signs .calc__btn {
+    width: 65px;
+    height: 65px;
+  }
+}
+
+@media (max-width: 359px) {
+  .calc__signs {
+    width: 260px;
+    margin: 0 auto;
+  }
+}/*# sourceMappingURL=style.css.map */
