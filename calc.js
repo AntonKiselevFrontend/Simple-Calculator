@@ -15,7 +15,10 @@ calc.addEventListener("click", function (event) {
         
         case "=":
             let equal = new Function ("return " + enter.textContent)();
-            result.textContent = Number(equal).toFixed(9) 
+            result.textContent = equal;
+            if (result.textContent.length >= 9) {
+                result.textContent = Number(equal).toFixed(9);
+            } 
             enter.textContent = "";
             break;
 
